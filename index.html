@@ -1,100 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bricolage+Grotesque">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Bricolage+Grotesque"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=UnifrakturMaguntia"
+    />
 
     <title>Rascat's Blog</title>
     <style>
-        html,
-        body {
-            height: 100%;
-            font-size: 18px;
-            font-family: "Bricolage Grotesque", sans-serif;
-        }
+      html,
+      body {
+        height: 100%;
+        font-size: 18px;
+        font-family: "Bricolage Grotesque", sans-serif;
+      }
 
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vf;
-        }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vf;
+        background-color: whitesmoke
+      }
 
-        a {
-            color: blue;
-            text-decoration: none;
-        }
+      a {
+        color: blue;
+        text-decoration: none;
+      }
 
-        p {
-            line-height: 1.4;
-            margin: 0;
-        }
+      p {
+        line-height: 1.4;
+        margin: 0;
+      }
 
-        p::first-letter {
-            color: white;
-            background-color: black;
-            border-radius: 2px;
-            box-shadow: 3px 3px 0 blue;
-            font-size: 250%;
-            padding: 6px 3px;
-            margin-right: 6px;
-            float: left;
-        }
+      p::first-letter {
+        color: white;
+        background-color: black;
+        border-radius: 2px;
+        box-shadow: 3px 3px 0 blue;
+        font-size: 250%;
+        padding: 1px 3px;
+        margin-right: 6px;
+        float: left;
+      }
 
-        .square {
-            width: 500px;
-            height: 500px;
-            text-align: justify;
-            /*             border: solid 1px blue; */
-/*             overflow: hidden; */
-        }
+      .square {
+        width: 500px;
+        height: 500px;
+        text-align: justify;
+        /*             border: solid 1px blue; */
+        /*             overflow: hidden; */
+      }
 
-        .grow {
-            transition: all .2s ease-in-out;
-            display: inline-block;
-        }
+      .grow {
+        transition: all 0.2s ease-in-out;
+        display: inline-block;
+      }
 
-        .grow:hover {
-            transform: scale(1.5);
-            background-color: white;
-        }
+      .grow:hover {
+        transform: scale(1.5);
+        background-color: white;
+      }
 
-        .blue {
-            color: blue;
-        }
+      .blue {
+        color: blue;
+      }
 
-        .pink {
-            color: fuchsia;
-        }
+      .pink {
+        color: fuchsia;
+      }
+
+      .fraktur {
+        font-family: "UnifrakturMaguntia", sans-serif;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="square">
-        <p>
-            Welcome to <span class="grow"><a href="https://github.com/Rascat">Rascat's</a></span> <span
-                class="grow">Blog</span>. In the near future, i might be publishing posts here, as you would expect from
-            a weblog.
-            I'm a developer who mostly deals with <span class="pink">TypeScript</span>, <span class="pink">Kotlin</span>
-            and <span class="pink">Python</span> most of the time. I am also super interested in all things functional
-            programming
-            If you want to contact me please write an eMail to <span class="grow blue">rascat[ät]mailbox[dot].org</span>
-            Lorem ipsum dolor
-            sit amet consectetur
-            adipisicing elit. Enim tenetur labore quisquam
-            nihil veniam, facere quam dolorum qui dicta beatae recusandae deserunt numquam officia odio porro reiciendis
-            quas praesentium error? Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt velit,
-            perspiciatis
-            accusantium doloremque facere consequuntur tenetur ipsa delectus! Accusantium molestias aspernatur ab rerum
-            accusamus at tenetur, voluptatem eligendi commodi atque. Lorem ipsum dolor, sit amet consectetur adipisicing
-            elit. Ea, repudiandae! Sequi atque inventore deleniti cupiditate vero, suscipit, hic, nesciunt architecto
-            assumenda iste ut tenetur recusandae at quam voluptatum quidem culpa!
-        </p>
+      <p>
+        Welcome to my Blog. My name is Rascat. I'm a software developer from
+        Leipzig, <span class="fraktur">East</span>-Germany. In the near future,
+        i might be publishing posts here, as you would expect from a weblog. I
+        deal with <span class="pink">TypeScript</span>,
+        <span class="pink">Kotlin</span> and
+        <span class="pink">Python</span> most of the time. I am also super
+        interested in all things functional programming If you want to contact
+        me please write an eMail to
+        <span class="grow blue">rascat[ät]mailbox[dot].org</span> This is my
+        <span class="grow"><a href="https://github.com/Rascat">GitHub</a></span>
+        page in case your interested. sit amet consectetur adipisicing elit.
+        Enim tenetur labore quisquam nihil veniam, facere quam dolorum qui dicta
+        beatae recusandae deserunt numquam officia odio porro reiciendis quas
+        praesentium error? Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Deserunt velit, perspiciatis accusantium doloremque facere
+        consequuntur tenetur ipsa delectus! Accusantium molestias aspernatur ab
+        rerum accusamus at tenetur, voluptatem eligendi commodi atque. Lorem
+        ipsum dolor, sit amet consectetur adipisicing elit. Ea, repudiandae!
+        Sequi atque inventore deleniti cupiditate vero, suscipit, hic, nesciunt
+        architecto assumenda iste ut tenetur recusandae at quam voluptatum!
+      </p>
     </div>
-
-</body>
-
+  </body>
 </html>
