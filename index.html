@@ -57,6 +57,8 @@
         text-align: justify;
         /*             border: solid 1px blue; */
         /*             overflow: hidden; */
+        position: relative;
+        z-index: 1;
       }
 
       .grow {
@@ -80,33 +82,26 @@
       .fraktur {
         font-family: "UnifrakturMaguntia", sans-serif;
       }
+
+      /* Full-viewport animated background canvas */
+      #life-bg {
+        position: fixed;
+        inset: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 0;
+        pointer-events: none;
+      }
     </style>
   </head>
 
   <body>
+    <canvas id="life-bg" aria-hidden="true"></canvas>
     <div class="square">
       <p>
-        Welcome to my Blog. My name is Rascat. I'm a software developer from
-        Leipzig, <span class="fraktur">East</span>-Germany. In the near future,
-        i might be publishing posts here, as you would expect from a weblog. I
-        deal with <span class="pink">TypeScript</span>,
-        <span class="pink">Kotlin</span> and
-        <span class="pink">Python</span> most of the time. I am also super
-        interested in all things functional programming If you want to contact
-        me please write an eMail to
-        <span class="grow blue">rascat[ät]mailbox[dot].org</span> This is my
-        <span class="grow"><a href="https://github.com/Rascat">GitHub</a></span>
-        page in case your interested. sit amet consectetur adipisicing elit.
-        Enim tenetur labore quisquam nihil veniam, facere quam dolorum qui dicta
-        beatae recusandae deserunt numquam officia odio porro reiciendis quas
-        praesentium error? Lorem ipsum dolor sit amet consectetur adipisicing
-        elit. Deserunt velit, perspiciatis accusantium doloremque facere
-        consequuntur tenetur ipsa delectus! Accusantium molestias aspernatur ab
-        rerum accusamus at tenetur, voluptatem eligendi commodi atque. Lorem
-        ipsum dolor, sit amet consectetur adipisicing elit. Ea, repudiandae!
-        Sequi atque inventore deleniti cupiditate vero, suscipit, hic, nesciunt
-        architecto assumenda iste ut tenetur recusandae at quam voluptatum!
-      </p>
+        Hello! My name is Rascat. <br>Write me an email: mail [at] rascat [dot] dev
+      
     </div>
+    <script src="background.js"></script>
   </body>
 </html>
