@@ -9,7 +9,7 @@
     cellSize: 24, // CSS pixels per cell
     gridColor: 'rgba(0,0,0,0.08)',
     gridLineWidth: 1,
-    liveColor: 'rgba(0, 102, 255, 0.35)',
+    liveColor: 'rgb(0, 0, 255)',
     bgColor: 'rgba(255,255,255,0)', // transparent
     simIntervalMs: 100 // simulation tick rate
   };
@@ -99,16 +99,6 @@
     gen++;
   }
 
-  function liveCenterY() {
-    let sumY = 0, count = 0;
-    for (let y = 0; y < rows; y++) {
-      for (let x = 0; x < cols; x++) {
-        if (board[idx(x, y)]) { sumY += y; count++; }
-      }
-    }
-    if (count === 0) return null;
-    return Math.round(sumY / count);
-  }
 
   function drawGrid() {
     ctx.save();
